@@ -1,111 +1,79 @@
-❤️ Heart Disease Prediction App
+❤️ Heart Disease Prediction Web App
 
-This project is an interactive web application that predicts the likelihood of heart disease based on patient health data. It is built using Streamlit and uses a trained Random Forest classifier, selected after testing multiple machine learning models via 5-fold cross-validation.
+An interactive machine learning application to predict the risk of heart disease using clinical data — powered by a trained Random Forest model and built with Streamlit.
 
-🔍 Features
-Predicts heart disease risk based on key medical parameters.
+🔗 Live Demo: https://your-streamlit-url.streamlit.app
+📁 GitHub Repo: https://github.com/yourusername/heart-disease-predictor
 
-Easy-to-use UI for patient data input.
+🚀 Features
 
-Provides probability-based risk feedback.
+    🔍 Predicts heart disease risk using 13 clinical indicators
 
-Built with clean UI using custom CSS styling.
+    📈 Displays risk level with probability score
 
-Model performance compared with Logistic Regression, KNN, SVM, XGBoost, and Gradient Boosting.
+    🎨 Clean, interactive UI with integrated visuals
 
-🧠 Models Compared
-The following models were tested and evaluated based on cross-validated accuracy:
+    📊 Shows feature distribution (bar plot) to aid understanding
 
-Logistic Regression
+    💾 Built with Random Forest and deployed via Streamlit Cloud
 
-Random Forest ✅ (Selected model)
+🧠 Technologies Used
 
-Gradient Boosting
+    Python, NumPy, Pandas
 
-XGBoost
+    scikit-learn, Joblib
 
-K-Nearest Neighbors (KNN)
+    Streamlit (v1.34)
 
-Linear SVC
+    Matplotlib, Seaborn
 
-(Refer to the bar_plot.jpeg for visual accuracy comparison.)
+    PIL (for image handling)
 
-📸 App Screenshot
+🖼️ Screenshots
+![Screenshot](images/Screen_front.png)
 
-![Model Accuracy Comparison](bar_plot.jpeg)
-![Screenshot](Screen_font.png)
+Main screen of the deployed prediction app
+📊 Feature Distribution Plot
+![Barplot](images/bar_plot.jpeg)
 
 
-📂 Files Included
-app.py: Streamlit application code
+Bar plot showing the distribution of clinical features from the training dataset
 
-heart-disease.csv: Dataset used for training/testing
+📋 How to Use (Run Locally)
 
-best_rf_model.pkl: Trained Random Forest model (should be added for full functionality)
+    Clone the repo
+    git clone https://github.com/yourusername/heart-disease-predictor.git
+    cd heart-disease-predictor
 
-bar_plot.jpeg: Model accuracy bar plot
+   Install the requirements
+    pip install -r requirements.txt
 
-Screen_font.png: App screenshot
+   Run the app
+    streamlit run app.py
 
-▶️ How to Run Locally
-Clone the repo:
+🔍 Input Features
 
-git clone https://github.com/yourusername/heart-disease-predictor.git
-cd heart-disease-predictor
+    Age, Sex, Chest Pain Type (cp)
 
-Install dependencies:
+    Resting Blood Pressure (trestbps), Cholesterol (chol)
 
-pip install -r requirements.txt
+    Fasting Blood Sugar (fbs), Resting ECG (restecg)
 
-Run the app:
+    Max Heart Rate (thalach), Exercise Angina (exang)
 
-streamlit run app.py
+    ST Depression (oldpeak), ST Slope, Major Vessels Colored (ca), Thalassemia
 
-Make sure the file best_rf_model.pkl is in the same directory as app.py.
 
-🌐 How to Keep Streamlit App Always Running
-To make your app publicly accessible and always online:
+🧪 Model Details
 
-Option 1: Deploy on Streamlit Community Cloud
-Push your code to GitHub.
+    Algorithm: Random Forest Classifier
 
-Go to Streamlit Cloud and connect your GitHub repo.
+    Training Accuracy: ~85–90%
 
-Deploy with a single click. It will stay live as long as it receives some traffic periodically.
+    Trained on the UCI Heart Disease dataset
 
-Option 2: Use a cloud provider (for advanced users)
-Deploy on:
+    Serialized with joblib: best_rf_model.pkl
 
-Render
+Made with ❤️ by Rupankar Mondal
+Let’s connect on [LinkedIn](https://www.linkedin.com/in/rupankar-mondal-931bbb259/)
 
-Heroku
-
-Google Cloud Run
-
-AWS EC2
-
-These options require setting up persistent servers, so they are more involved but offer more control.
-
-📊 Dataset
-The dataset (heart-disease.csv) includes:
-
-Age, Sex, Chest pain type
-
-Cholesterol, Blood pressure
-
-ECG results, ST depression
-
-Max heart rate, Thalassemia, etc.
-
-This data is typically derived from the UCI Heart Disease Dataset or similar sources.
-
-📌 Future Improvements
-Allow upload of CSVs for batch predictions
-
-Save patient results for historical tracking
-
-Add SHAP or feature importance plots for model interpretability
-
-🙌 Credits
-Developed by Rupankar Mondal
-Built with ❤️ using Machine Learning & Streamlit
