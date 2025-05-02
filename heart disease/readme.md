@@ -3,7 +3,7 @@
 An interactive machine learning application to predict the risk of heart disease using clinical data — powered by a trained Random Forest model and built with Streamlit.
 
 🔗 Live Demo: https://your-streamlit-url.streamlit.app
-📁 GitHub Repo: https://github.com/yourusername/heart-disease-predictor
+📁 GitHub Repo: (https://github.com/rupankar-1733/MLrepository/tree/main/heart%20disease)
 
 🚀 Features
 
