@@ -53,7 +53,8 @@ st.markdown(
 )
 
 # Load trained model
-model = joblib.load("best_rf_model.pkl")
+model = joblib.load("heart_disease/best_rf_model.pkl")
+
 
 # Title
 st.markdown("<h1 style='text-align: center;'>❤️ Heart Disease Prediction</h1>", unsafe_allow_html=True)
