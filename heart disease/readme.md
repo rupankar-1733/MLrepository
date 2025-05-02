@@ -32,6 +32,8 @@ Linear SVC
 
 📸 App Screenshot
 
+![Model Accuracy Comparison](bar_plot.jpeg)
+![Screenshot](Screen_font.png)
 
 
 📂 Files Included
