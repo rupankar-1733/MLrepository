@@ -116,4 +116,4 @@ if st.button("🔍 Predict Heart Disease Risk"):
 
 # Footer
 st.markdown("---")
-st.markdown("<small style='text-align: center; display: block;'>Built with ❤️ by Your Name</small>", unsafe_allow_html=True)
+st.markdown("<small style='text-align: center; display: block;'>Built with ❤️ by Rupankar Mondal</small>", unsafe_allow_html=True)
