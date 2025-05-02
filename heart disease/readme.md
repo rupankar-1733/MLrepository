@@ -30,7 +30,7 @@ An interactive machine learning application to predict the risk of heart disease
     PIL (for image handling)
 
 🖼️ Screenshots
-![Screenshot](images/Screen_front.png)
+![Screenshot](images/Screen_font.png)
 
 Main screen of the deployed prediction app
 📊 Feature Distribution Plot
